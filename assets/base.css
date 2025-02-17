@@ -3620,40 +3620,46 @@ details-disclosure > details {
 }
 
 .secondary-nav-bar {
-  display: flex;
-  padding: 12px 20px;
-  align-items: center;
-  background-color: #EEF2F5; 
+  background-color: #EEF2F5; /* background color */
   padding: 10px 0;
 }
 
 .nav-links {
   display: flex;
-  justify-content: left; 
-  gap: 30px; 
+  justify-content: space-between; /* links across the container */
+  align-items: center;
+  width: 100%;
 }
 
 .nav-links li {
   list-style-type: none;
+  display: flex;
+  justify-content: center; /* Center list items */
 }
 
 .nav-links a {
-color: #000;
-text-align: center;
-
-/* Body Regular */
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-}
-
-.nav-links li:last-child {
-  margin-left: auto; 
+  color: #000; /* Text color */
+  font-family: 'Inter', sans-serif; /* Font */
+  font-size: 16px; /* Font size */
+  text-decoration: none;
+  padding: 0 15px; /* Horizontal padding */
+  line-height: 24px;
 }
 
 .nav-links a:hover {
-  color: #004F9F; /* Example hover color */
+  color: #ff6600; /* Hover effect color */
 }
+
+/* Push the last item to the right */
+.nav-links li:last-child {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Stack the links vertically on smaller screens */
+    gap: 10px;
+  }
+}
+
 
