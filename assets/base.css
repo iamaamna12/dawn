@@ -3628,9 +3628,9 @@ details-disclosure > details {
 
 .nav-links {
   display: flex;
-  justify-content: space-between; /* links across the container */
+  width: 1400px;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
 .nav-links li {
