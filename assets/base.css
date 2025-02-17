@@ -3644,7 +3644,7 @@ details-disclosure > details {
   font-family: 'Inter', sans-serif; /* Font */
   font-size: 16px; /* Font size */
   text-decoration: none;
-  padding: 0 15px; /* Horizontal padding */
+  font-weight: 400;
   line-height: 24px;
 }
 
