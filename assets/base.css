@@ -3655,6 +3655,9 @@ details-disclosure > details {
   margin-left: auto;
 }
 
+.nav-links a svg {
+  margin-left: 8px; /* Adds space between the text and the icon */
+}
 @media screen and (max-width: 768px) {
   .nav-links {
     flex-direction: column; /* Stack the links vertically on smaller screens */
