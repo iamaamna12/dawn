@@ -3621,7 +3621,9 @@ details-disclosure > details {
 
 .secondary-nav-bar {
   background-color: #EEF2F5; /* background color */
-  padding: 10px 0;
+  padding: 12px 20px;
+  align-self: stretch;
+  display: flex;
 }
 
 .nav-links {
