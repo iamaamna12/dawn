@@ -3620,14 +3620,17 @@ details-disclosure > details {
 }
 
 .secondary-nav-bar {
-  background-color: white; 
+  display: flex;
+  padding: 12px 20px;
+  align-items: center;
+  background-color: #EEF2F5; 
   padding: 10px 0;
 }
 
 .nav-links {
   display: flex;
-  justify-content: center; /* Align links in the center */
-  gap: 30px; /* Adjust the space between each link */
+  justify-content: left; 
+  gap: 30px; 
 }
 
 .nav-links li {
@@ -3635,15 +3638,22 @@ details-disclosure > details {
 }
 
 .nav-links a {
-  color: #000;
-  font-family: 'Inter', sans-serif; /* Ensure the font family matches */
-  font-size: 16px; /* Adjust the font size as per Figma */
-  text-align: center;
-  text-decoration: none;
-  line-height: 24px; /* Adjust line-height for proper spacing */
+color: #000;
+text-align: center;
+
+/* Body Regular */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+.nav-links li:last-child {
+  margin-left: auto; 
 }
 
 .nav-links a:hover {
-  color: #ff6600; /* Example hover color */
+  color: #004F9F; /* Example hover color */
 }
 
