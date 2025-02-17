@@ -3598,3 +3598,23 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+.utility-bar {
+  display: flex;
+  padding: 8px 64px;
+  justify-content: center;
+  align-items: center;
+  background-color: #004F9F;
+}
+
+.announcement-bar__message {
+  color: white;  
+}
+
+.announcement-bar__link {
+  color: white; 
+}
+
+.utility-bar--bottom-border {
+  border-bottom: 1px solid white; 
+}
