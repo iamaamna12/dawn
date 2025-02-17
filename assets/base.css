@@ -3618,3 +3618,32 @@ details-disclosure > details {
 .utility-bar--bottom-border {
   border-bottom: 1px solid white; 
 }
+
+.secondary-nav-bar {
+  background-color: white; 
+  padding: 10px 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center; /* Align links in the center */
+  gap: 30px; /* Adjust the space between each link */
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: #000;
+  font-family: 'Inter', sans-serif; /* Ensure the font family matches */
+  font-size: 16px; /* Adjust the font size as per Figma */
+  text-align: center;
+  text-decoration: none;
+  line-height: 24px; /* Adjust line-height for proper spacing */
+}
+
+.nav-links a:hover {
+  color: #ff6600; /* Example hover color */
+}
+
