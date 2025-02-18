@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -5,49 +14,73 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
+        "image_ed3qFK": {
+          "type": "image",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "image": "shopify://shop_images/image-1.png",
+            "image_width": 260,
+            "alignment": "center"
           }
         },
-        "footer-1": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Info",
-            "menu": "footer"
-          }
-        },
-        "footer-2": {
+        "text_3RkGac": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "",
+            "subtext": "<h5>Für Fachinformationen anmelden: exklusive, kostenlose Informationen für Mitglieder erhalten. Attraktive Sonderkonditionen. Innovative Aktionen.</h5>"
+          }
+        },
+        "text_aaxFTK": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Kontakt</strong>",
+            "subtext": "<p>08152 - 9893040</p><p>info@kommondo.de</p>"
+          }
+        },
+        "text_cRCV4Y": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Oder per Whatsapp</strong>",
+            "subtext": "<p>+49 170 5798830</p>"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "image_ed3qFK",
+        "text_3RkGac",
+        "text_aaxFTK",
+        "text_cRCV4Y"
       ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "show_social": true,
+        "newsletter_heading": "Für Fachinformationen anmelden: exklusive, kostenlose Informationen für Mitglieder erhalten. Attraktive Sonderkonditionen. Innovative Aktionen.",
+        "enable_follow_on_shop": false,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": false,
-        "margin_top": 48,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "margin_top": 60,
+        "padding_top": 40,
+        "padding_bottom": 60
+      }
+    },
+    "custom_liquid_Wcp8GH": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".footer {text-align: center; flex: 1 0 0;}",
+        ".footer-content {color: var(--Colors-Grey-dark, #848c8c); text-align: center; /* Body Small */ font-family: Inter; font-size: 14px; font-style: normal; font-weight: 400; line-height: 22px; /* 157.143% */}"
+      ],
+      "settings": {
+        "custom_liquid": "<footer class=\"footer\">\n  <div class=\"footer-content\">\n    <p>Onlineshop für B2B und B2G Kunden. * Alle Preise rein netto zzgl. der aktuell gesetzlich gültiger Mehrwertsteuer. Fracht zzgl. 9 % vom Netto-Auftragswert und ggf. Nachnahmegebühren, wenn nicht anders angegeben.</p>\n    <p>© Kommondo GmbH. All rights reserved.</p>\n  </div>\n</footer>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "footer"
+    "footer",
+    "custom_liquid_Wcp8GH"
   ]
 }
