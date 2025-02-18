@@ -64,9 +64,23 @@
         "padding_top": 40,
         "padding_bottom": 60
       }
+    },
+    "custom_liquid_Wcp8GH": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".footer {text-align: center; flex: 1 0 0;}",
+        ".footer-content {color: var(--Colors-Grey-dark, #848c8c); text-align: center; /* Body Small */ font-family: Inter; font-size: 14px; font-style: normal; font-weight: 400; line-height: 22px; /* 157.143% */}"
+      ],
+      "settings": {
+        "custom_liquid": "<footer class=\"footer\">\n  <div class=\"footer-content\">\n    <p>Onlineshop für B2B und B2G Kunden. * Alle Preise rein netto zzgl. der aktuell gesetzlich gültiger Mehrwertsteuer. Fracht zzgl. 9 % vom Netto-Auftragswert und ggf. Nachnahmegebühren, wenn nicht anders angegeben.</p>\n    <p>© Kommondo GmbH. All rights reserved.</p>\n  </div>\n</footer>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "footer"
+    "footer",
+    "custom_liquid_Wcp8GH"
   ]
 }
