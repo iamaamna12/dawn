@@ -36,6 +36,13 @@
             "swatch_shape": "square"
           }
         },
+        "text_V76cBY": {
+          "type": "text",
+          "settings": {
+            "text": "Produktnummer: 123455720",
+            "text_style": "body"
+          }
+        },
         "quantity_selector_E8fcRN": {
           "type": "quantity_selector",
           "settings": {}
@@ -46,6 +53,27 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
+        },
+        "custom_liquid_6pmMqX": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"product-availability\" style=\"font-size: 16px; font-weight: normal; display: flex; align-items: center;\">\n  <span class=\"availability-dot\" style=\"width: 8px; height: 8px; flex-shrink: 0; border-radius: 50%; background: var(--Colors-Success-Green, #008B10); margin-right: 10px;\"></span>\n  <span class=\"availability-text\" style=\"color: #333;\">\n    <strong style=\"font-weight: 600;\">Sofort verfügbar</strong>, Lieferung: 1-2 Wochen\n  </span>\n</div>"
+          }
+        },
+        "icon_with_text_fEPxjt": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "truck",
+            "image_1": "shopify://shop_images/mynaui-truck.svg",
+            "heading_1": "Versandkostenfrei ab 1.500€",
+            "icon_2": "return",
+            "image_2": "shopify://shop_images/svgexport-11.svg",
+            "heading_2": "Geprüftes Sortiment",
+            "icon_3": "truck",
+            "image_3": "shopify://shop_images/svgexport-4.svg",
+            "heading_3": "Einfache Abwicklung"
+          }
         }
       },
       "block_order": [
@@ -53,8 +81,11 @@
         "title_4tmcfL",
         "price_KCWMJ7",
         "variant_picker_HwgW7p",
+        "text_V76cBY",
         "quantity_selector_E8fcRN",
-        "buy_buttons_idgKky"
+        "buy_buttons_idgKky",
+        "custom_liquid_6pmMqX",
+        "icon_with_text_fEPxjt"
       ],
       "settings": {
         "product": "verkehrszeichen-101-gefahrstelle-sl-900-2-mm-ra2",
