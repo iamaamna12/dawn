@@ -22,25 +22,33 @@
             "alignment": "center"
           }
         },
-        "footer-1": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Info",
-            "menu": "footer"
-          }
-        },
-        "footer-2": {
+        "text_3RkGac": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+            "heading": "",
+            "subtext": "<h5>Für Fachinformationen anmelden: exklusive, kostenlose Informationen für Mitglieder erhalten. Attraktive Sonderkonditionen. Innovative Aktionen.</h5>"
+          }
+        },
+        "text_aaxFTK": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Kontakt</strong>",
+            "subtext": "<p>08152 - 9893040</p><p>info@kommondo.de</p>"
+          }
+        },
+        "text_cRCV4Y": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Oder per Whatsapp</strong>",
+            "subtext": "<p>+49 170 5798830</p>"
           }
         }
       },
       "block_order": [
         "image_ed3qFK",
-        "footer-1",
-        "footer-2"
+        "text_3RkGac",
+        "text_aaxFTK",
+        "text_cRCV4Y"
       ],
       "settings": {
         "color_scheme": "scheme-1",
