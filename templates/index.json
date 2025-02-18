@@ -98,15 +98,30 @@
         "image_zoom": "none",
         "hide_variants": false,
         "enable_video_looping": false,
-        "padding_top": 24,
-        "padding_bottom": 60
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_fqFnc8": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".featured-collection-heading {display: flex; align-items: center; gap: 10px;}",
+        ".featured-collection-heading .title {color: #004f9f; font-family: Inter, sans-serif; font-size: 26px; font-weight: 600; line-height: 34px; letter-spacing: 1.3px;}",
+        ".featured-collection-heading .separator {color: #c8c8c8; font-size: 24px;}",
+        ".featured-collection-heading .subtitle {color: #c8c8c8; font-size: 26px; font-weight: 400; /* Semi-bold */}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"featured-collection-heading\">\n  <span class=\"title\">ZUBEHÖR</span>\n  <span class=\"separator\">|</span>\n  <span class=\"subtitle\">ZUBEHÖR & ERSATZTEILE</span>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "featured_collection_kLUJGD": {
       "type": "featured-collection",
       "custom_css": [],
       "settings": {
-        "title": "ZUBEHÖR | ZUBEHÖR & ERSATZTEILE",
+        "title": "",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -142,8 +157,8 @@
       "settings": {
         "custom_liquid": "<div class=\"featured-collection-heading\">\n  <span class=\"title\">KUNDEN KAUFTEN AUCH</span>\n  <span class=\"separator\">|</span>\n  <span class=\"subtitle\">ZULETZT GESEHEN</span>\n</div>",
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "featured_collection_nb9BKj": {
@@ -177,6 +192,7 @@
   },
   "order": [
     "featured_product_FxaeyF",
+    "custom_liquid_fqFnc8",
     "featured_collection_kLUJGD",
     "custom_liquid_TdzCCn",
     "featured_collection_nb9BKj"
