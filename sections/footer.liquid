@@ -3,14 +3,17 @@
 <footer class="footer">
   <div class="footer__top">
     <div class="footer__column footer__newsletter">
-      <h5>Für Fachinformationen anmelden:</h5>
+      {% assign logo_url = 'logo.png' | asset_url %}
+      <img src="{{ logo_url }}" alt="Logo">
       <p>
-        exklusive, kostenlose Informationen für Mitglieder erhalten. Attraktive Sonderkonditionen. Innovative Aktionen.
+        Für Fachinformationen anmelden: exklusive, kostenlose Informationen für Mitglieder erhalten. Attraktive
+        Sonderkonditionen. Innovative Aktionen.
       </p>
       <form action="#" method="post">
         <input type="email" name="email" placeholder="Email" required>
         <button type="submit" class="btn btn-primary">Subscribe</button>
       </form>
+      <p>Ich habe die Datenschutzbestimmungen zur Kenntnis genommen.</p>
     </div>
 
     <div class="footer__column footer__contact">
