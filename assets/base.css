@@ -3873,10 +3873,15 @@ details-disclosure > details {
 }
 /* Header Search Wrapper */
 .header__search-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 300px; /* Adjust this width as per your layout */
+display: flex;
+width: 560px;
+height: 48px;
+padding-left: 12px;
+align-items: center;
+gap: 10px;
+border-radius: 2px;
+border: 1px solid var(--Colors-Grey-dark, #848C8C);
+background: #FFF;
 }
 
 /* Header Search Input */
@@ -3902,6 +3907,7 @@ align-items: center;
 gap: 10px;
 flex-shrink: 0;
 align-self: stretch;
+
 }
 
 .header__search-button:hover {
