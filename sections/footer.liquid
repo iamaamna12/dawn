@@ -19,6 +19,20 @@
       <p>info@kommondo.de</p>
     </div>
 
+    <div class="footer__payment">
+      {% assign logo_url = 'pay1.png' | asset_url %}
+      <img src="{{ logo_url }}" alt="Rechnung">
+
+      {% assign paypal_url = 'image-5.png' | asset_url %}
+      <img src="{{ paypal_url }}" alt="PAYPAL">
+
+      {% assign visa_url = 'visa.png' | asset_url %}
+      <img src="{{ visa_url }}" alt="Mastercard/Visa">
+
+      {% assign delivery_url = 'delivery.png' | asset_url %}
+      <img src="{{ delivery_url }}" alt="Certification">
+    </div>
+
     <div class="footer__column footer__whatsapp">
       <strong>Oder per Whatsapp</strong>
       <p>+49 170 5798830</p>
