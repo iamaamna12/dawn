@@ -3691,11 +3691,6 @@ details-disclosure > details {
   padding: 0 20px;
 }
 
-.footer__column p {
-  border-radius: var(--Border-Radius-border-radius--sm, 2px);
-border: 1px solid var(--Colors-Grey-dark, #848C8C);
-}
-
 .footer__column form {
   display: flex;
   flex-direction: column;
