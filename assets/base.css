@@ -3886,7 +3886,6 @@ background: #FFF;
 
 /* Header Search Input */
 .header__search-input {
-  color: var(--Colors-Grey-dark, #848C8C);
   /* Body Regular */
   font-family: Inter;
   font-size: 16px;
