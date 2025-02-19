@@ -3828,14 +3828,13 @@ details-disclosure > details {
 
 /* Header Container */
 .header {
-display: flex;
-width: 1440px;
-padding: 24px 20px;
-flex-direction: column;
-display: flex;
-justify-content: space-between;
-align-items: center;
-align-self: stretch;
+  display: flex;
+  width: 1440px;
+  padding: 24px 20px;
+  flex-direction: row; /* Keep header items in one row */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center align the elements vertically */
+  align-self: stretch;
 }
 
 /* Logo Position */
@@ -3853,6 +3852,14 @@ align-self: stretch;
   width: auto;
 }
 
+/* Header Icons */
+.header__icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px; /* Adjust space between icons */
+}
+
 /* For small screens */
 @media (max-width: 750px) {
   .header {
@@ -3860,14 +3867,7 @@ align-self: stretch;
     align-items: flex-start;
   }
 
-.header__icons{
-  display: flex;
-padding: 8px;
-justify-content: center;
-align-items: center;
-  width: 13.041px; 
-  height:4.002px; 
-  flex-shrink: 0; 
-  stroke-width: 1.354px; 
-  stroke: var(--colors-Basic-Black,#000);
+  .header__icons {
+    justify-content: center; /* Center the icons on small screens */
+  }
 }
