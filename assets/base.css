@@ -3691,14 +3691,9 @@ details-disclosure > details {
   padding: 0 20px;
 }
 
-.footer__column h5 {
-  font-size: 18px;
-  font-weight: bold;
-}
-
 .footer__column p {
-  font-size: 14px;
-  color: #848C8C;
+  border-radius: var(--Border-Radius-border-radius--sm, 2px);
+border: 1px solid var(--Colors-Grey-dark, #848C8C);
 }
 
 .footer__column form {
@@ -3708,17 +3703,25 @@ details-disclosure > details {
 }
 
 .footer__column form input {
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
+  display: flex;
+padding: 12px;
+align-items: center;
+gap: 8px;
+flex: 1 0 0;
 }
 
 .footer__column form button {
-  padding: 10px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  cursor: pointer;
+  color: var(--Colors-Basic-White, #FFF);
+
+/* Button */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+letter-spacing: 1.6px;
+border-radius: var(--Border-Radius-border-radius--sm, 2px);
+background: var(--Colors-Blue, #004F9F);
 }
 
 .footer__column form button:hover {
