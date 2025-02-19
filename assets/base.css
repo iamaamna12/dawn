@@ -3683,10 +3683,10 @@ details-disclosure > details {
 .footer__top {
   display: flex;
   justify-content: space-between;
-  width: 100%; /* Use 100% width */
+  width: 100%;
   max-width: 1440px;
-  padding-bottom: 20px;
 }
+
 .footer__column form {
   display: flex;
   flex-direction: row; /* Align elements horizontally */
@@ -3821,3 +3821,31 @@ details-disclosure > details {
   background-color: #0056b3; /* Hover effect for the button */
 }
 
+.footer__column form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* This ensures both elements stay aligned */
+  gap: 10px; /* Space between input and button */
+}
+
+.footer__column form input {
+  flex: 1; /* Makes the input field grow to fit available space */
+  padding: 12px;
+  border-radius: 2px;
+  border: 1px solid var(--Colors-Grey-dark, #848C8C);
+}
+
+.footer__column form button {
+  height: 48px;
+  padding: 12px;
+  background: var(--Colors-Blue, #004F9F);
+  color: white;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__column form button:hover {
+  background-color: #0056b3;
+}
