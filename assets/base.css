@@ -3874,3 +3874,14 @@ details-disclosure > details {
     margin-top: 10px;
   }
 }
+.header__icons{
+  display: flex;
+padding: 8px;
+justify-content: center;
+align-items: center;
+  width: 13.041px; 
+  height:4.002px; 
+  flex-shrink: 0; 
+  stroke-width: 1.354px; 
+  stroke: var(--colors-Basic-Black,#000);
+}
