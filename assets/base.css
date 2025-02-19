@@ -3667,13 +3667,12 @@ details-disclosure > details {
     gap: 10px;
   }
 }
-
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%; /* Use full width of the container */
+  width: 100%;
   padding: 60px 20px;
   gap: 40px;
   border-top: 1px solid #C8C8C8;
@@ -3691,11 +3690,14 @@ details-disclosure > details {
   display: flex;
   flex-direction: row; /* Align elements horizontally */
   gap: 10px;
+  width: 100%;
 }
 
 .footer__column form input {
   padding: 12px;
-  flex: 1; /* Make the input take all available space */
+  flex: 1; /* Makes the input field take all available space */
+  border-radius: 2px;
+  border: 1px solid var(--Colors-Grey-dark, #848C8C);
 }
 
 .footer__column form button {
@@ -3714,13 +3716,13 @@ details-disclosure > details {
   background-color: #0056b3;
 }
 
-
+/* Text styling for paragraph */
 .footer__column p {
   color: var(--Colors-Basic-Black, #000);
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .footer__bottom {
@@ -3729,13 +3731,12 @@ details-disclosure > details {
   padding-bottom: 52px;
   font-size: 14px;
   color: #848C8C;
-  max-width: 100%;
-  width: 100%;
 }
 
+/* Payment images in footer */
 .footer__column img {
-  margin-right: 10px; /* Space between images */
-  height: 30px; /* Adjust according to image size */
+  margin-right: 10px;
+  height: 30px; /* Adjust image size as needed */
   width: auto;
 }
 
@@ -3768,14 +3769,12 @@ details-disclosure > details {
   align-self: stretch;
   color: var(--Colors-Grey-dark, #848C8C);
   
-  /* Body Small */
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
   
-  /* Text Styling */
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
@@ -3818,34 +3817,5 @@ details-disclosure > details {
 }
 
 .btn-primary:hover {
-  background-color: #0056b3; /* Hover effect for the button */
-}
-
-.footer__column form {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* This ensures both elements stay aligned */
-  gap: 10px; /* Space between input and button */
-}
-
-.footer__column form input {
-  flex: 1; /* Makes the input field grow to fit available space */
-  padding: 12px;
-  border-radius: 2px;
-  border: 1px solid var(--Colors-Grey-dark, #848C8C);
-}
-
-.footer__column form button {
-  height: 48px;
-  padding: 12px;
-  background: var(--Colors-Blue, #004F9F);
-  color: white;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer__column form button:hover {
   background-color: #0056b3;
 }
