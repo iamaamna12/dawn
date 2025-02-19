@@ -3672,8 +3672,9 @@ details-disclosure > details {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: 1440px;
+  width: 100%;
   padding: 60px 20px;
+  gap: 40px;
   border-top: 1px solid #C8C8C8;
   background: #FFFFFF;
 }
@@ -3687,41 +3688,37 @@ details-disclosure > details {
 
 .footer__column form {
   display: flex;
-align-items: center;
-gap: 64px;
-align-self: stretch;
-padding: 12px;
-flex: 1 0 0;
-  flex-direction: row; /* Align elements horizontally */
+  justify-content: space-between;  /* Ensure space between the input and button */
+  gap: 10px;  /* Small gap between input and button */
   width: 100%;
 }
 
 .footer__column form input {
   padding: 12px;
-  flex: 1; /* Makes the input field take all available space */
+  flex: 1; /* Makes the input field grow to fit available space */
   border-radius: 2px;
   border: 1px solid var(--Colors-Grey-dark, #848C8C);
+  max-width: 400px;  /* Adjust this to control the width of the input */
 }
 
 .footer__column form button {
-  padding: 16px 12px;
+  padding: 12px 20px;
   color: var(--Colors-Basic-White, #FFF);
+  font-family: Inter;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
   letter-spacing: 1.6px;
   border-radius: 2px;
   background: var(--Colors-Blue, #004F9F);
+  min-width: 150px;  /* Ensure button size is consistent */
 }
 
 .footer__column form button:hover {
   background-color: #0056b3;
 }
 
-/* Text styling for paragraph */
+/* Additional styling for other sections */
 .footer__column p {
   color: var(--Colors-Basic-Black, #000);
   font-family: Inter;
@@ -3736,13 +3733,6 @@ flex: 1 0 0;
   padding-bottom: 52px;
   font-size: 14px;
   color: #848C8C;
-}
-
-/* Payment images in footer */
-.footer__column img {
-  margin-right: 10px;
-  height: 30px; /* Adjust image size as needed */
-  width: auto;
 }
 
 .footer__payment {
@@ -3773,54 +3763,15 @@ flex: 1 0 0;
 .below-subscribe-text {
   align-self: stretch;
   color: var(--Colors-Grey-dark, #848C8C);
-  
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
-}
-
-/* Form Layout */
-.subscribe-form {
-  display: flex;
-  padding: 12px;
-  align-items: center;
-  gap: 8px;
-  flex: 1 0 0;
-  border-radius: var(--Border-Radius-border-radius--sm, 2px);
-  border: 1px solid var(--Colors-Grey-dark, #848C8C);
-}
-
-/* Input Field */
-.subscribe-input {
-  padding: 12px;
-  flex: 1;
-  border-radius: var(--Border-Radius-border-radius--sm, 2px);
-  border: 1px solid var(--Colors-Grey-dark, #848C8C);
-}
-
-/* Button Styling */
-.btn-primary {
-  display: flex;
-  height: 48px;
-  padding: 12px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: var(--Border-Radius-border-radius--sm, 2px);
-  background: var(--Colors-Blue, #004F9F);
-  color: #fff; /* Assuming white text */
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
 }
