@@ -3689,8 +3689,9 @@ details-disclosure > details {
 .footer__column form {
   display: flex;
   justify-content: space-between;  /* Ensure space between the input and button */
-  gap: 10px;  /* Small gap between input and button */
-  width: 100%;
+  gap: 16px;  /* Small gap between input and button */
+  width: 540px;
+  align-items: flex-start;
 }
 
 .footer__column form input {
