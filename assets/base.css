@@ -3825,3 +3825,52 @@ details-disclosure > details {
     height: 25px;
   }
 }
+
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 3rem;  /* Add space around header */
+}
+
+/* Logo Position */
+.header__heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Header Logo */
+.header__heading-logo-wrapper {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+/* Navigation Bar */
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add space between icons (cart, account, search) */
+}
+
+/* Navigation Icon Styling */
+.header__icon {
+  display: flex;
+  align-items: center;
+}
+
+/* For small screens */
+@media (max-width: 750px) {
+  .header {
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: flex-start;
+  }
+
+  .header__icons {
+    margin-top: 10px;
+  }
+}
