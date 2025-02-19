@@ -3670,11 +3670,10 @@ details-disclosure > details {
 
 .footer {
   display: flex;
-width: 840px;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-align-self: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; /* Use full width of the container */
   padding: 60px 20px;
   gap: 40px;
   border-top: 1px solid #C8C8C8;
@@ -3684,8 +3683,9 @@ align-self: stretch;
 .footer__top {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100%; /* Use 100% width */
   max-width: 1440px;
+  padding-bottom: 20px;
 }
 
 .footer__column {
@@ -3694,15 +3694,11 @@ align-self: stretch;
 }
 
 .footer__column p {
-  align-self: stretch;
   color: var(--Colors-Basic-Black, #000);
-
-/* Body Regular */
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }
 
 .footer__column form {
@@ -3712,25 +3708,21 @@ line-height: 24px; /* 150% */
 }
 
 .footer__column form input {
-  display: flex;
-padding: 12px;
-align-items: center;
-gap: 8px;
-flex: 1 0 0;
+  padding: 12px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
 }
 
 .footer__column form button {
   color: var(--Colors-Basic-White, #FFF);
-
-/* Button */
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 125% */
-letter-spacing: 1.6px;
-border-radius: var(--Border-Radius-border-radius--sm, 2px);
-background: var(--Colors-Blue, #004F9F);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 1.6px;
+  border-radius: 2px;
+  background: var(--Colors-Blue, #004F9F);
 }
 
 .footer__column form button:hover {
@@ -3743,7 +3735,27 @@ background: var(--Colors-Blue, #004F9F);
   padding-bottom: 52px;
   font-size: 14px;
   color: #848C8C;
+  max-width: 100%;
+  width: 100%;
 }
 
+.footer__column img {
+  margin-right: 10px; /* Space between images */
+  height: 30px; /* Adjust according to image size */
+  width: auto;
+}
 
+.footer__payment {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
 
+.footer__bottom-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__bottom p {
+  margin: 0;
+}
