@@ -3784,3 +3784,44 @@ details-disclosure > details {
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* For small screens like tablets */
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer__column {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .footer__column form {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 10px;
+    width: 100%;
+  }
+  .footer__bottom-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile screens */
+  .footer__top {
+    padding: 20px 10px;
+  }
+  .footer__column form input,
+  .footer__column form button {
+    width: 100%;
+  }
+  .footer__bottom {
+    font-size: 12px;
+  }
+  .footer__column img {
+    margin-right: 5px;
+    height: 25px;
+  }
+}
