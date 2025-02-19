@@ -3721,11 +3721,13 @@ details-disclosure > details {
 
 /* Additional styling for other sections */
 .footer__column p {
+  align-self: stretch;
   color: var(--Colors-Basic-Black, #000);
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  max-width: 540px;
 }
 
 .footer__bottom {
