@@ -3687,39 +3687,24 @@ details-disclosure > details {
   max-width: 1440px;
   padding-bottom: 20px;
 }
-
-.footer__column {
-  flex: 1;
-  padding: 0 20px;
-}
-
-.footer__column p {
-  color: var(--Colors-Basic-Black, #000);
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-}
-
 .footer__column form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Align elements horizontally */
   gap: 10px;
 }
 
 .footer__column form input {
   padding: 12px;
-  align-items: center;
-  gap: 8px;
-  flex: 1 0 0;
+  flex: 1; /* Make the input take all available space */
 }
 
 .footer__column form button {
+  padding: 12px 20px;
   color: var(--Colors-Basic-White, #FFF);
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
   letter-spacing: 1.6px;
   border-radius: 2px;
   background: var(--Colors-Blue, #004F9F);
@@ -3727,6 +3712,15 @@ details-disclosure > details {
 
 .footer__column form button:hover {
   background-color: #0056b3;
+}
+
+
+.footer__column p {
+  color: var(--Colors-Basic-Black, #000);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }
 
 .footer__bottom {
