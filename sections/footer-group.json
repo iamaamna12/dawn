@@ -1,78 +1,47 @@
 {
-  "name": "t:sections.footer.name",
+  "name": "Footer",
   "type": "footer",
   "sections": {
     "footer": {
       "type": "footer",
       "blocks": {
-        "image_ed3qFK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/image-1.png",
-            "image_width": 260,
-            "alignment": "center"
-          }
-        },
-        "text_3RkGac": {
+        "text_1": {
           "type": "text",
           "settings": {
-            "heading": "",
-            "subtext": "<h5>Für Fachinformationen anmelden: exklusive, kostenlose Informationen für Mitglieder erhalten. Attraktive Sonderkonditionen. Innovative Aktionen.</h5>"
+            "heading": "Für Fachinformationen anmelden:",
+            "subtext": "exklusive, kostenlose Informationen für Mitglieder erhalten. Attraktive Sonderkonditionen. Innovative Aktionen."
           }
         },
-        "text_aaxFTK": {
+        "text_2": {
           "type": "text",
           "settings": {
-            "heading": "<strong>Kontakt</strong>",
-            "subtext": "<p>08152 - 9893040</p><p>info@kommondo.de</p>"
+            "heading": "Kontakt",
+            "subtext": "08152 - 9893040\ninfo@kommondo.de"
           }
         },
-        "text_cRCV4Y": {
+        "text_3": {
           "type": "text",
           "settings": {
-            "heading": "<strong>Oder per Whatsapp</strong>",
-            "subtext": "<p>+49 170 5798830</p>"
+            "heading": "Oder per Whatsapp",
+            "subtext": "+49 170 5798830"
           }
         }
       },
-      "block_order": [
-        "image_ed3qFK",
-        "text_3RkGac",
-        "text_aaxFTK",
-        "text_cRCV4Y"
-      ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
-        "newsletter_heading": "Für Fachinformationen anmelden: exklusive, kostenlose Informationen für Mitglieder erhalten. Attraktive Sonderkonditionen. Innovative Aktionen.",
+        "newsletter_heading": "Für Fachinformationen anmelden",
         "enable_follow_on_shop": false,
         "show_social": false,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": false,
         "margin_top": 60,
         "padding_top": 40,
         "padding_bottom": 60
       }
-    },
-    "custom_liquid_Wcp8GH": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".footer { text-align: center; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; width: 1440px; padding: 60px 20px; gap: 40px; border-top: 1px solid var(--Colors-Grey-medium, #C8C8C8); background: var(--Background-color-primary, #FFF); }",
-        ".footer-content { color: var(--Colors-Grey-dark, #848c8c); text-align: center; font-family: Inter; font-size: 14px; font-style: normal; font-weight: 400; line-height: 22px; /* 157.143% */ }",
-        ".footer__content-bottom { text-align: center; margin-top: 40px; padding-bottom: 52px; }"
-      ],
-      "settings": {
-        "custom_liquid": "<footer class=\"footer\">\n  <div class=\"footer-content\">\n    <p>Onlineshop für B2B und B2G Kunden. * Alle Preise rein netto zzgl. der aktuell gesetzlich gültiger Mehrwertsteuer. Fracht zzgl. 9 % vom Netto-Auftragswert und ggf. Nachnahmegebühren, wenn nicht anders angegeben.</p>\n    <p>© Kommondo GmbH. All rights reserved.</p>\n  </div>\n</footer>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
-    "footer",
-    "custom_liquid_Wcp8GH"
+    "footer"
   ]
 }
