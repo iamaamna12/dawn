@@ -131,23 +131,15 @@
 
 <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}">
   <div class="header__heading">
-    <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-      {%- if settings.logo != blank -%}
-        <div class="header__heading-logo-wrapper">
-          {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-          <img src="{{ settings.logo | image_url: width: 200 }}" alt="{{ logo_alt }}">
-        </div>
-      {%- else -%}
-        <span class="h2">{{ shop.name }}</span>
-      {%- endif -%}
-    </a>
+    {% assign logo_url = 'logoclr.png' | asset_url %}
+    <img src="{{ logo_url }}" alt="logo" style="width: 279px; height=81.75px;">
   </div>
+  {% render 'header-search', input_id: 'Search-In-Modal' %}
 
   <div class="header__icons">
     <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart">
-      <span class="svg-wrapper">{{ 'icon-cart.svg' | inline_asset_content }}</span>
+      <span class="svg-wrapper">{{ 'cart.svg' | inline_asset_content }}</span>
     </a>
-    {% render 'header-search', input_id: 'Search-In-Modal' %}
   </div>
 </header>
 
