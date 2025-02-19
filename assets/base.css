@@ -3895,14 +3895,13 @@ details-disclosure > details {
 .header__search-button {
   border-radius: 0px 2px 2px 0px;
 background: var(--Colors-Blue, #004F9F);/* Blue background for the button */
-  color: white;
-  padding-right: 0px;
-  border: none;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+display: flex;
+width: 48px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+align-self: stretch;
 }
 
 .header__search-button:hover {
@@ -3911,7 +3910,12 @@ background: var(--Colors-Blue, #004F9F);/* Blue background for the button */
 
 /* Optional: Adjust button icon size */
 .header__search-button .svg-wrapper {
-  width: 16px;
-  height: 16px;
+display: flex;
+width: 16px;
+height: 16px;
+padding-right: 0px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
   
 }
