@@ -3687,12 +3687,12 @@ details-disclosure > details {
 
 .footer__column form {
   display: flex;
-padding: 12px;
 align-items: center;
-gap: 8px;
+gap: 64px;
+align-self: stretch;
+padding: 12px;
 flex: 1 0 0;
   flex-direction: row; /* Align elements horizontally */
-  gap: 10px;
   width: 100%;
 }
 
@@ -3706,11 +3706,12 @@ flex: 1 0 0;
 .footer__column form button {
   padding: 16px 12px;
   color: var(--Colors-Basic-White, #FFF);
+  font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  height: 48px;
   letter-spacing: 1.6px;
   border-radius: 2px;
   background: var(--Colors-Blue, #004F9F);
