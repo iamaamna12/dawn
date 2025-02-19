@@ -3672,9 +3672,8 @@ details-disclosure > details {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  width: 1440px;
   padding: 60px 20px;
-  gap: 40px;
   border-top: 1px solid #C8C8C8;
   background: #FFFFFF;
 }
@@ -3688,6 +3687,10 @@ details-disclosure > details {
 
 .footer__column form {
   display: flex;
+padding: 12px;
+align-items: center;
+gap: 8px;
+flex: 1 0 0;
   flex-direction: row; /* Align elements horizontally */
   gap: 10px;
   width: 100%;
@@ -3701,12 +3704,13 @@ details-disclosure > details {
 }
 
 .footer__column form button {
-  padding: 12px 20px;
+  padding: 16px 12px;
   color: var(--Colors-Basic-White, #FFF);
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 48px;
   letter-spacing: 1.6px;
   border-radius: 2px;
   background: var(--Colors-Blue, #004F9F);
