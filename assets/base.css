@@ -3894,6 +3894,7 @@ background: #FFF;
   font-weight: 400;
   line-height: 24px; /* 150% */
   flex: 1 0 0;
+  border-color: #FFF;
 }
 
 /* Header Search Button */
