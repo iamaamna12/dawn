@@ -4,36 +4,36 @@
 {{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
-
-{%- style -%}
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1440px;
-    padding: 60px 20px;
-    gap: 40px;
-    border-top: 1px solid var(--Colors-Grey-medium, #C8C8C8);
-    background: var(--Background-color-primary, #FFF);
-  }
-
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
+{%- comment -%}
+  {%- style -%}
     .footer {
-      margin-top: {{ section.settings.margin_top }}px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1440px;
+      padding: 60px 20px;
+      gap: 40px;
+      border-top: 1px solid var(--Colors-Grey-medium, #C8C8C8);
+      background: var(--Background-color-primary, #FFF);
     }
 
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
-  }
-{%- endstyle -%}
 
+    @media screen and (min-width: 750px) {
+      .footer {
+        margin-top: {{ section.settings.margin_top }}px;
+      }
+
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+{%- endcomment -%}
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   {%- liquid
     assign has_social_icons = true
