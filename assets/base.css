@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body, .footer__column p, .footer__column form, .footer__column button {
+  font-family: 'Inter', sans-serif;
+}
+
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
