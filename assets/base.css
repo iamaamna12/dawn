@@ -3871,3 +3871,47 @@ details-disclosure > details {
     justify-content: center; /* Center the icons on small screens */
   }
 }
+/* Header Search Wrapper */
+.header__search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px; /* Adjust this width as per your layout */
+}
+
+/* Header Search Input */
+.header__search-input {
+  color: var(--Colors-Grey-dark, #848C8C);
+  /* Body Regular */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  flex: 1 0 0;
+}
+
+/* Header Search Button */
+.header__search-button {
+  border-radius: 0px 2px 2px 0px;
+background: var(--Colors-Blue, #004F9F);/* Blue background for the button */
+  color: white;
+  padding-right: 0px;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header__search-button:hover {
+  background-color: #0056b3; /* Darker blue when hovering */
+}
+
+/* Optional: Adjust button icon size */
+.header__search-button .svg-wrapper {
+  width: 16px;
+  height: 16px;
+  
+}

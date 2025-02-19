@@ -134,7 +134,15 @@
     {% assign logo_url = 'logoclr.png' | asset_url %}
     <img src="{{ logo_url }}" alt="logo" style="width: 279px; height=81.75px;">
   </div>
-  {% render 'header-search', input_id: 'Search-In-Modal' %}
+  {% comment %}
+    {% render 'header-search', input_id: 'Search-In-Modal' %}
+  {% endcomment %}
+  <div class="header__search-wrapper">
+    <input type="text" placeholder="Suche" class="header__search-input">
+    <button class="header__search-button">
+      <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
+    </button>
+  </div>
 
   <div
     class="header__icons"
