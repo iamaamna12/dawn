@@ -23,12 +23,12 @@
   /* Header container layout */
   .header {
     display: flex;
-    width: 100%;
+    width: 1440px;
     padding: 24px 20px;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    flex-direction: column; /* Make the header stack vertically */
+    align-self: stretch;
   }
 
   /* Logo Position */
@@ -73,9 +73,11 @@
   /* Navbar menu */
   .header__menu {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start;
-    gap: 10px;
+    flex-direction: row; /* Stack items vertically */
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    gap: auto;
     width: 100%; /* Ensure it takes up full width */
   }
 
@@ -95,9 +97,23 @@
 
   /* For mobile view */
   @media (max-width: 750px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
+    .header__nav {
+      display: none; /* Hide the menu */
+    }
+
+    .header__hamburger {
+      display: none; /* show hamburger icon*/
+    }
+  }
+
+  /* For desktop */
+  @media (min-width: 751px) {
+    .header__nav {
+      display: flex; /* Show the menu on desktop */
+      gap: 20px; /* Adjust the gap between items */
+    }
+    .header__hamburger {
+      display: none; /* Hide hamburger on desktop */
     }
 
     /* Hide menu for mobile and show hamburger */
