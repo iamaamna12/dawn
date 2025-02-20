@@ -132,7 +132,7 @@
 <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}">
   <div class="header__heading">
     {% assign logo_url = 'logoclr.png' | asset_url %}
-    <img src="{{ logo_url }}" alt="logo" style="width: 279px; height=81.75px;">
+    <img src="{{ logo_url }}" alt="logo" style="width: 279px; height:81.75px; padding: 10px;">
   </div>
   {% comment %}
     {% render 'header-search', input_id: 'Search-In-Modal' %}
