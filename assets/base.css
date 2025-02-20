@@ -3871,17 +3871,18 @@ details-disclosure > details {
     justify-content: center; /* Center the icons on small screens */
   }
 }
+
 /* Header Search Wrapper */
 .header__search-wrapper {
-display: flex;
-width: 560px;
-height: 48px;
-padding-left: 12px;
-align-items: center;
-gap: 10px;
-border-radius: 2px;
-border: 1px solid var(--Colors-Grey-dark, #848C8C);
-background: #FFF;
+  display: flex;
+  width: 560px;
+  height: 48px;
+  padding-left: 12px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--Colors-Grey-dark, #848C8C);
+  background: #FFF;
 }
 
 /* Header Search Input */
@@ -3899,15 +3900,14 @@ background: #FFF;
 
 /* Header Search Button */
 .header__search-button {
-background: var(--Colors-Blue, #004F9F);/* Blue background for the button */
-display: flex;
-width: 48px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-align-self: stretch;
-
+  background: var(--Colors-Blue, #004F9F); /* Blue background for the button */
+  display: flex;
+  width: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
 }
 
 .header__search-button:hover {
@@ -3916,14 +3916,13 @@ align-self: stretch;
 
 /* Optional: Adjust button icon size */
 .header__search-button .svg-wrapper {
-display: flex;
-width: 16px;
-height: 16px;
-padding-right: 0px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
-  
+  display: flex;
+  width: 16px;
+  height: 16px;
+  padding-right: 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 /* Navbar Styles */
@@ -3944,8 +3943,8 @@ flex-shrink: 0;
   color: var(--Colors-Basic-Black, #000);
   text-decoration: none;
   display: flex;
-align-items: flex-start;
-flex: 1 0 0;
+  align-items: flex-start;
+  flex: 1 0 0;
 }
 
 /* Menu Styles */
