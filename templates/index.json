@@ -24,10 +24,7 @@
           "settings": {
             "heading_size": "h2"
           }
-        },
-        "price_KCWMJ7": {
-          "type": "price",
-          "settings": {}
+        
         },
         "variant_picker_HwgW7p": {
           "type": "variant_picker",
@@ -35,6 +32,10 @@
             "picker_type": "button",
             "swatch_shape": "square"
           }
+        },
+        "price_KCWMJ7": {
+          "type": "price",
+          "settings": {}
         },
         "text_V76cBY": {
           "type": "text",
