@@ -3672,6 +3672,9 @@ details-disclosure > details {
     flex-direction: column; /* Stack the links vertically on smaller screens */
     gap: 10px;
   }
+  .secondary-nav-bar {
+    display: none;
+  }
 }
 .footer {
   display: flex;
@@ -4060,9 +4063,6 @@ details-disclosure > details {
     display: none;
   }
   .hamburger-menu {
-    display: none;
-  }
-  .secondary-nav-bar {
     display: none;
   }
 }
