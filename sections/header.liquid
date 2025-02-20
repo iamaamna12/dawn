@@ -20,6 +20,7 @@
 
 <style>
   /* Header container layout */
+  /* Header container layout */
   .header {
     display: flex;
     width: 100%;
@@ -27,6 +28,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    flex-direction: column; /* Make the header stack vertically */
   }
 
   /* Logo Position */
@@ -49,6 +51,7 @@
     display: flex;
     align-items: center;
     flex: 1;
+    margin-bottom: 10px; /* Add space below the search bar */
   }
 
   .header__search-input {
@@ -70,12 +73,12 @@
   /* Navbar menu */
   .header__menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%; /* Ensure it takes up full width */
   }
 
-  /* Navbar menu items */
   .header__menu a {
     color: #000;
     font-family: Inter;
@@ -110,34 +113,24 @@
     /* Show hamburger on smaller screens */
     .hamburger-menu {
       display: block;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      background-color: white;
+      top: 70px;
+      left: 20px;
+      width: 200px;
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-  }
 
-  /* Hamburger menu icon */
-  .navbar__hamburger {
-    display: none;
-    cursor: pointer;
-  }
-
-  .hamburger-menu {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    background-color: white;
-    top: 70px;
-    left: 20px;
-    width: 200px;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .hamburger-menu a {
-    color: #000;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
+    .hamburger-menu a {
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+    }
   }
 </style>
 
