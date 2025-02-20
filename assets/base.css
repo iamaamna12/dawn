@@ -3879,8 +3879,8 @@ height: 48px;
 padding-left: 12px;
 align-items: center;
 gap: 10px;
-/*border-radius: 2px;
-border: 1px solid var(--Colors-Grey-dark, #848C8C);*/
+border-radius: 2px;
+border: 1px solid var(--Colors-Grey-dark, #848C8C);
 background: #FFF;
 }
 
@@ -3894,6 +3894,7 @@ background: #FFF;
   line-height: 24px; /* 150% */
   flex: 1 0 0;
   border-color: #FFF;
+  border-radius: 0%;
 }
 
 /* Header Search Button */
