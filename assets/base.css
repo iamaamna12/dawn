@@ -4066,9 +4066,11 @@ details-disclosure > details {
 @media (max-width: 1024px) {
   /* Styles for tablets */
   .navbar__logo {
+    order: 1; /* Position logo first */
     align-items: left;
   }
   .navbar__menu {
+    order: 2;
     align-content: center;
   }
   .header {
@@ -4081,6 +4083,7 @@ gap: 24px;
 align-self: stretch;
   }
   .header__search-wrapper {
+    order: 3;
     align-content: center;
     color: var(--Colors-Grey-dark, #848C8C);
     flex-grow: 1;
@@ -4099,9 +4102,11 @@ line-height: 22px; /* 157.143% */
 @media (max-width: 600px) {
   /* Styles for mobile devices */
   .navbar__logo {
+    order: 1;
     align-items: left;
   }
   .navbar__menu {
+    order: 2;
     align-content: center;
   }
   .header {
@@ -4113,6 +4118,7 @@ line-height: 22px; /* 157.143% */
     align-self: stretch;
   }
   .header__search-wrapper {
+    order: 3;
     color: var(--Colors-Grey-dark, #848C8C);
 
     /* Mobile Body Regular */
