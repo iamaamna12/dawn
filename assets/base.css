@@ -4062,4 +4062,7 @@ details-disclosure > details {
   .hamburger-menu {
     display: none;
   }
+  .secondary-nav-bar {
+    display: none;
+  }
 }
