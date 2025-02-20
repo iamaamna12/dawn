@@ -4064,17 +4064,13 @@ details-disclosure > details {
 }
 
 @media (max-width: 1024px) {
-  .header__heading{
-    order: 1;
+  /* Styles for tablets */
+  .navbar__logo {
+    order: 1; /* Position logo first */
     align-items: left;
     width: 131.133px;
 height: 38.32px;
-  
-  /*.navbar__logo {
-    order: 1; /* Position logo first 
-    align-items: left;
-    width: 131.133px;
-height: 38.32px; */
+  }
   .navbar__menu {
     order: 2;
     align-content: right;
@@ -4109,20 +4105,14 @@ line-height: 22px; /* 157.143% */
 }
 
 @media (max-width: 600px) {
-  /* Styles for mobile devices */
-  .header__heading{
-    order: 1;
-    align-items: left;
-    width: 131.133px;
-height: 38.32px;
-  }
-  /*.navbar__logo {
+ 
+  .navbar__logo {
     order: 1;
     align-items: left;
     width: 131.133px;
 height: 38.32px;
 
-  }*/
+  }
   .navbar__menu {
     
     order: 2;
