@@ -372,5 +372,15 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.querySelector('.navbar__hamburger');
+        const menu = document.querySelector('.hamburger-menu');
+
+        hamburger.addEventListener('click', function () {
+          menu.classList.toggle('show');
+        });
+      });
+    </script>
   </body>
 </html>

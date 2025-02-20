@@ -9,13 +9,13 @@
 >
 {% render 'secondary-nav-bar' %}
 
-{%- if settings.predictive_search_enabled -%}
+{% if settings.predictive_search_enabled %}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-{%- endif -%}
+{% endif %}
 
-{%- if section.settings.menu_type_desktop == 'mega' -%}
+{% if section.settings.menu_type_desktop == 'mega' %}
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
-{%- endif -%}
+{% endif %}
 
 <style>
   header-drawer {
@@ -126,17 +126,24 @@
     justify-content: center;
   }
 </style>
+<script>
+  // JavaScript for toggling the mobile menu
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.navbar__hamburger');
+    const menu = document.querySelector('.hamburger-menu');
 
-<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+    hamburger.addEventListener('click', function () {
+      menu.classList.toggle('show');
+    });
+  });
+</script>
 
 <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}">
   <div class="header__heading">
     {% assign logo_url = 'logoclr.png' | asset_url %}
-    <img src="{{ logo_url }}" alt="logo" style="width: 279px; height:81.75px; : 20px;">
+    <img src="{{ logo_url }}" alt="logo" style="width: 279px; height:81.75px;">
   </div>
-  {% comment %}
-    {% render 'header-search', input_id: 'Search-In-Modal' %}
-  {% endcomment %}
+
   <div class="header__search-wrapper">
     <input type="text" placeholder="Suche" class="header__search-input">
     <button class="header__search-button">
@@ -144,8 +151,7 @@
     </button>
   </div>
 
-  < class="header__icons">
-    <!-- Account Icon -->
+  <div class="header__icons">
     {% if shop.customer_accounts_enabled %}
       <a
         href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
@@ -155,32 +161,27 @@
       </a>
     {% endif %}
 
-    <!-- Cart Icon -->
     <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart">
       <span class="svg-wrapper">{{ 'cart.svg' | inline_asset_content }}</span>
     </a>
 
     <!-- Hamburger Icon -->
-    <div class="navbar__hamburger" onclick="toggleMenu()">
+    <div class="navbar__hamburger">
       <span>&#9776;</span>
     </div>
-    <!-- Hamburger Icon (for mobile/tablet) -->
-<div class="navbar__hamburger">
-  <span>&#9776;</span> <!-- Hamburger icon -->
-</div>
+  </div>
 
-<!-- Hamburger Menu -->
-<div class="hamburger-menu">
-  <a href="#">Schilder</a>
-  <a href="#">Befestigen und Montieren</a>
-  <a href="#">Baustellenabsicherung</a>
-  <a href="#">Straßenausstattung</a>
-  <a href="#">Stadtmobiliar</a>
-  <a href="#">Grünpflege</a>
-  <a href="#">Betriebsbedarf</a>
-  <a href="#" class="action">Aktion %</a>
-</div>
-
+  <!-- Hamburger Menu (for mobile/tablet) -->
+  <div class="hamburger-menu">
+    <a href="#">Schilder</a>
+    <a href="#">Befestigen und Montieren</a>
+    <a href="#">Baustellenabsicherung</a>
+    <a href="#">Straßenausstattung</a>
+    <a href="#">Stadtmobiliar</a>
+    <a href="#">Grünpflege</a>
+    <a href="#">Betriebsbedarf</a>
+    <a href="#" class="action">Aktion %</a>
+  </div>
 </header>
 
 {% schema %}
