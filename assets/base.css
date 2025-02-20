@@ -4068,10 +4068,15 @@ details-disclosure > details {
   .navbar__logo {
     order: 1; /* Position logo first */
     align-items: left;
+    width: 131.133px;
+height: 38.32px;
   }
   .navbar__menu {
     order: 2;
-    align-content: center;
+    align-content: right;
+    width: 26px;
+height: 26px;
+flex-shrink: 0;
   }
   .header {
     align-items: center;
@@ -4104,10 +4109,17 @@ line-height: 22px; /* 157.143% */
   .navbar__logo {
     order: 1;
     align-items: left;
+    width: 131.133px;
+height: 38.32px;
+
   }
   .navbar__menu {
+    
     order: 2;
     align-content: center;
+    width: 26px;
+height: 26px;
+flex-shrink: 0;
   }
   .header {
     display: flex;
