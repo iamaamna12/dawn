@@ -3986,11 +3986,6 @@ flex-shrink: 0;
   .navbar__menu {
     display: none; /* Hide menu by default on mobile */
   }
-
-  .navbar__hamburger {
-    display: block; /* Show hamburger icon on small screens */
-  }
-
   /* When hamburger icon is clicked, show the menu */
   .navbar__menu.active {
     display: block;
@@ -4015,3 +4010,33 @@ flex-shrink: 0;
     font-size: 18px;
   }
 }
+
+/* For mobile and tablet: Show hamburger after cart */
+@media (max-width: 750px) {
+  .header__icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .navbar__hamburger {
+    display: block; /* Show hamburger icon */
+    cursor: pointer;
+  }
+
+  /* Hide hamburger on desktop */
+  @media (min-width: 751px) {
+    .navbar__hamburger {
+      display: none;
+    }
+  }
+}
+
+/* Additional styling for the mobile view, if necessary */
+@media (max-width: 750px) {
+  .header__icons {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
