@@ -4059,4 +4059,7 @@ details-disclosure > details {
   .navbar__hamburger {
     display: none;
   }
+  .hamburger-menu {
+    display: none;
+  }
 }
