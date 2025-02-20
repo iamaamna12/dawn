@@ -3879,8 +3879,8 @@ height: 48px;
 padding-left: 12px;
 align-items: center;
 gap: 10px;
-border-radius: 2px;
-border: 1px solid var(--Colors-Grey-dark, #848C8C);
+/*border-radius: 2px;
+border: 1px solid var(--Colors-Grey-dark, #848C8C);*/
 background: #FFF;
 }
 
