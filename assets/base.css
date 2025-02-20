@@ -3943,6 +3943,9 @@ flex-shrink: 0;
   font-size: 24px;
   color: var(--Colors-Basic-Black, #000);
   text-decoration: none;
+  display: flex;
+align-items: flex-start;
+flex: 1 0 0;
 }
 
 /* Menu Styles */
@@ -4017,6 +4020,12 @@ flex-shrink: 0;
     display: flex;
     gap: 10px;
     align-items: center;
+    display: flex;
+width: 24px;
+height: 24px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
   }
 
   .navbar__hamburger {
@@ -4037,6 +4046,12 @@ flex-shrink: 0;
   .header__icons {
     flex-direction: row;
     justify-content: flex-end;
+    display: flex;
+width: 40px;
+height: 48px;
+padding: 8px;
+justify-content: center;
+align-items: center;
   }
 }
 
