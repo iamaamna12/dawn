@@ -4066,3 +4066,35 @@ details-disclosure > details {
     display: none;
   }
 }
+
+@media (max-width: 1024px) {
+  /* Styles for tablets */
+  .navbar__logo {
+    align-items: left;
+  }
+  .navbar__menu {
+    align-content: center;
+  }
+  .header {
+    align-items: center;
+    display: flex;
+padding: 24px 48px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+  }
+  .header__search-wrapper {
+    align-content: center;
+    color: var(--Colors-Grey-dark, #848C8C);
+
+/* Mobile Body Regular */
+font-family: "Source Sans 3 VF";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
+
+  }
+}
+
