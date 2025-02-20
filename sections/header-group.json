@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Shopbestellungen VERSANDKOSTENFREI ab einem Bestellwert von 1.500€",
+            "text": "Shopbestellungen <span class=\"bold-text\">VERSANDKOSTENFREI</span> ab einem Bestellwert von 1.500€",
             "link": ""
           }
         }
@@ -26,7 +26,7 @@
         "announcement-bar-0"
       ],
       "custom_css": [
-        ".announcement-bar span:contains('VERSANDKOSTENFREI') { font-weight: bold; }"
+        ".announcement-bar .bold-text { font-weight: bold; }"
       ],
       "settings": {
         "color_scheme": "",
