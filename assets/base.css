@@ -4087,6 +4087,8 @@ align-self: stretch;
   .header__search-wrapper {
     align-content: center;
     color: var(--Colors-Grey-dark, #848C8C);
+    flex-grow: 1;
+    width: 100%;
 
 /* Mobile Body Regular */
 font-family: "Source Sans 3 VF";
