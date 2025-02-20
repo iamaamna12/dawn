@@ -41,7 +41,9 @@
             >
           {%- endif -%}
           <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span>
+            <span>
+              {% raw %}Shopbestellungen <span class="bold-text">VERSANDKOSTENFREI</span> ab einem Bestellwert von 1.500€{% endraw %}
+            </span>
             {%- if section.blocks.first.settings.link != blank -%}
               {{- 'icon-arrow.svg' | inline_asset_content -}}
             {%- endif -%}
