@@ -129,14 +129,12 @@
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 
-<header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+<header class="header">
   <div class="header__heading">
     {% assign logo_url = 'logoclr.png' | asset_url %}
-    <img src="{{ logo_url }}" alt="logo" style="width: 279px; height:81.75px; : 20px;">
+    <img src="{{ logo_url }}" alt="logo" style="width: 279px; height:81.75px; margin: 20px;">
   </div>
-  {% comment %}
-    {% render 'header-search', input_id: 'Search-In-Modal' %}
-  {% endcomment %}
+
   <div class="header__search-wrapper">
     <input type="text" placeholder="Suche" class="header__search-input">
     <button class="header__search-button">
@@ -144,10 +142,7 @@
     </button>
   </div>
 
-  <div
-    class="header__icons"
-  >
-    <!-- Account Icon -->
+  <div class="header__icons">
     {% if shop.customer_accounts_enabled %}
       <a
         href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
@@ -157,10 +152,14 @@
       </a>
     {% endif %}
 
-    <!-- Cart Icon -->
     <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart">
       <span class="svg-wrapper">{{ 'cart.svg' | inline_asset_content }}</span>
     </a>
+  </div>
+
+  <!-- Mobile Hamburger Icon -->
+  <div class="navbar__hamburger">
+    <span>&#9776;</span>
   </div>
 </header>
 
