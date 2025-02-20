@@ -26,7 +26,8 @@
         "announcement-bar-0"
       ],
       "custom_css": [
-        ".announcement-bar .bold-text {font-weight: bold;}"
+        ".announcement-bar .bold-text {font-weight: bold;}",
+        ".announcement-bar span:contains('VERSANDKOSTENFREI') { font-weight: bold; }"
       ],
       "settings": {
         "color_scheme": "",
