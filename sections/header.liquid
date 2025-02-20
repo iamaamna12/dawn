@@ -20,15 +20,14 @@
 
 <style>
   /* Header container layout */
-  /* Header container layout */
   .header {
     display: flex;
-    width: 1440px;
+    width: 100%;
     padding: 24px 20px;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-self: stretch;
+    gap: 20px;
+    flex-direction: row; /* Keep the header in a row for larger screens */
   }
 
   /* Logo Position */
@@ -73,11 +72,9 @@
   /* Navbar menu */
   .header__menu {
     display: flex;
-    flex-direction: row; /* Stack items vertically */
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 0 0;
-    gap: auto;
+    flex-direction: row; /* Display items in a row for larger screens */
+    justify-content: flex-start;
+    gap: 20px;
     width: 100%; /* Ensure it takes up full width */
   }
 
@@ -88,7 +85,6 @@
     font-weight: 600;
     line-height: 24px;
     text-decoration: none;
-    padding: 10px;
   }
 
   .header__menu a.action {
@@ -97,36 +93,22 @@
 
   /* For mobile view */
   @media (max-width: 750px) {
-    .header__nav {
-      display: none; /* Hide the menu */
+    .header {
+      flex-direction: column; /* Stack the header vertically on smaller screens */
+      align-items: flex-start;
     }
 
-    .header__hamburger {
-      display: none; /* show hamburger icon*/
-    }
-  }
-
-  /* For desktop */
-  @media (min-width: 751px) {
-    .header__nav {
-      display: flex; /* Show the menu on desktop */
-      gap: 20px; /* Adjust the gap between items */
-    }
-    .header__hamburger {
-      display: none; /* Hide hamburger on desktop */
-    }
-
-    /* Hide menu for mobile and show hamburger */
-    .header__menu {
-      display: none;
-    }
-
+    /* Show hamburger menu on smaller screens */
     .navbar__hamburger {
       display: block;
       cursor: pointer;
     }
 
-    /* Show hamburger on smaller screens */
+    /* Hide the menu on mobile */
+    .header__menu {
+      display: none;
+    }
+
     .hamburger-menu {
       display: block;
       flex-direction: column;
@@ -146,6 +128,13 @@
       font-size: 16px;
       font-weight: 600;
       text-decoration: none;
+    }
+  }
+
+  /* Hide hamburger menu by default on desktop */
+  @media (min-width: 751px) {
+    .navbar__hamburger {
+      display: none;
     }
   }
 </style>
