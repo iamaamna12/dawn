@@ -28,16 +28,31 @@
   {% endunless %}
 
   {%- style -%}
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+        .section-{{ section.id }}-padding {
+          padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+          padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+          display: flex;
+      justify-content: flex-start; /* Align items to the left */
+      align-items: stretch;
+        }
+
+        @media screen and (min-width: 750px) {
+          .section-{{ section.id }}-padding {
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+          }
+        }
+
+    .product__media-wrapper {
+      display: flex;
+      flex-direction: column; /* Stack images vertically */
+      margin-right: 10px; /* Add some space between the images and main image */
     }
 
-    @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
+    .product__media-item img {
+      height: 80px; /* Set the height of the images */
+      object-fit: cover; /* Ensure images maintain their aspect ratio without stretching */
+      margin-bottom: 5px; /* Add space between each image */
     }
   {%- endstyle -%}
 
