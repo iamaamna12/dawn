@@ -32,8 +32,8 @@
           padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
           padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
           display: flex;
-      justify-content: flex-start; /* Align items to the left */
-      align-items: stretch;
+       /* Align items to the left */
+
         }
 
         @media screen and (min-width: 750px) {
@@ -46,7 +46,9 @@
     .product__media-item img {
       height: 80px; /* Set the height of the images */
       object-fit: cover; /* Ensure images maintain their aspect ratio without stretching */
-      margin-bottom: 5px; /* Add space between each image */
+      margin-bottom: 5px;
+      justify-content: flex-start;
+      align-items: stretch;/* Add space between each image */
     }
   {%- endstyle -%}
 
