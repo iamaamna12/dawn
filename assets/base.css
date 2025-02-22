@@ -4143,7 +4143,7 @@ flex-shrink: 0;
   }
 }
 
-.product-title{
+.product__title{
 color: var(--Colors-Basic-Black, #000);
 /* H2 */
 font-family: Inter;
