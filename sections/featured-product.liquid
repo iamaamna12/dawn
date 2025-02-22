@@ -28,63 +28,72 @@
   {% endunless %}
 
   {%- style -%}
-                    .section-{{ section.id }}-padding {
-                      display: flex;
-                      align: right;
-                    }
+                        .section-{{ section.id }}-padding {
+                          display: flex;
+                          align: right;
+                        }
 
-                    .product__title{
-                      color: var(--Colors-Basic-Black, #000);
-                      font-family: Inter;
-                      font-size: 40px;
-                      font-style: normal;
-                      font-weight: 600;
-                      line-height: 48px; /* 120% */
-                      letter-spacing: 2px;
-                    }
+                        .product__title{
+                          color: var(--Colors-Basic-Black, #000);
+                          font-family: Inter;
+                          font-size: 40px;
+                          font-style: normal;
+                          font-weight: 600;
+                          line-height: 48px; /* 120% */
+                          letter-spacing: 2px;
+                        }
 
-                    .product__info-container{
-                      display: flex;
-                      flex-direction: column;
-                      align-self: stretch;
-                      width: 100%;
-                      align-items: flex-start;
-                      gap: 32px;
-                      flex: 1 0 0;
+                        .product__info-container{
+                          display: flex;
+                          flex-direction: column;
+                          align-self: stretch;
+                          width: 100%;
+                          align-items: flex-start;
+                          gap: 32px;
+                          flex: 1 0 0;
 
-                    }
+                        }
 
-                    @media screen and (min-width: 750px) {
-                      .section-{{ section.id }}-padding {
-                        padding-top: {{ section.settings.padding_top }}px;
-                        padding-bottom: {{ section.settings.padding_bottom }}px;
-                      }
-                    }
+                        @media screen and (min-width: 750px) {
+                          .section-{{ section.id }}-padding {
+                            padding-top: {{ section.settings.padding_top }}px;
+                            padding-bottom: {{ section.settings.padding_bottom }}px;
+                          }
+                        }
 
-                .product-images-container {
-      display: flex; /* Flex container for horizontal alignment */
-      align-items: flex-start; /* Align images at the top */
-      gap: 20px; /* Space between small images and the main image */
+    /* Flex container for the media item */
+    .product-images-container {
+      display: flex;
+      align-items: flex-start; /* Align small images and main image at the top */
+      gap: 20px; /* Add space between the two sections */
     }
 
+    /* Small images are stacked vertically */
     .small-images {
       display: flex;
       flex-direction: column; /* Stack images vertically */
-      gap: 10px; /* Space between the small images */
-      max-width: 120px; /* Control the width of the small images section */
+      gap: 10px; /* Add space between images */
+      max-width: 100px; /* Limit the width of small images section */
+      overflow-y: auto; /* Allow scrolling if there are many small images */
+    }
+
+    /* Style for small images */
+    .small-images img {
+      width: 80px; /* Set a fixed width */
+      height: 80px; /* Set a fixed height */
+      object-fit: cover; /* Ensure images are cropped to fit */
+      cursor: pointer; /* Change cursor on hover */
+    }
+
+    /* Main image styling */
+    .main-image {
+      flex-grow: 1; /* Allow the main image to take remaining space */
     }
 
     .main-image img {
-      width: 100%; /* Main image takes up the full width of its container */
-      max-width: 500px; /* Max width to avoid stretching */
+      width: 100%; /* Make the image take full width of the container */
+      max-width: 500px; /* Set a max width to prevent stretching */
       height: auto; /* Maintain aspect ratio */
-    }
-
-    .product__media-item img {
-      width: 80px; /* Set width for smaller images */
-      height: 80px; /* Set height for smaller images */
-      object-fit: cover; /* Ensure the aspect ratio is maintained */
-      cursor: pointer; /* Show pointer on hover */
     }
   {%- endstyle -%}
 
