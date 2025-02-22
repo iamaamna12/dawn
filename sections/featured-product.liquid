@@ -28,44 +28,13 @@
   {% endunless %}
 
   {%- style -%}
-                        .section-{{ section.id }}-padding {
-                          display: flex;
-                          align: right;
-                        }
-
-                        .product__title{
-                          color: var(--Colors-Basic-Black, #000);
-                          font-family: Inter;
-                          font-size: 40px;
-                          font-style: normal;
-                          font-weight: 600;
-                          line-height: 48px; /* 120% */
-                          letter-spacing: 2px;
-                        }
-
-                        .product__info-container{
-                          display: flex;
-                          flex-direction: column;
-                          align-self: stretch;
-                          width: 100%;
-                          align-items: flex-start;
-                          gap: 32px;
-                          flex: 1 0 0;
-
-                        }
-
-                        @media screen and (min-width: 750px) {
-                          .section-{{ section.id }}-padding {
-                            padding-top: {{ section.settings.padding_top }}px;
-                            padding-bottom: {{ section.settings.padding_bottom }}px;
-                          }
-                        }
-
-    /* Flex container for the media item */
+      /* Flex container for the media item */
     .product-images-container {
       display: flex;
+      flex-direction: row; /* Explicitly set to row */
       align-items: flex-start; /* Align small images and main image at the top */
       gap: 20px; /* Add space between the two sections */
+      justify-content: flex-start; /* Align content to the start */
     }
 
     /* Small images are stacked vertically */
@@ -94,6 +63,23 @@
       width: 100%; /* Make the image take full width of the container */
       max-width: 500px; /* Set a max width to prevent stretching */
       height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Other styles for the product info container */
+    .product__info-container {
+      display: flex;
+      flex-direction: column; /* Ensure items are aligned in a column */
+      align-self: stretch;
+      width: 100%;
+      align-items: flex-start;
+      gap: 32px;
+      flex: 1 0 0;
+    }
+
+    .section-{{ section.id }}-padding {
+      display: flex;
+      align-items: flex-start; /* Adjust alignment of the items */
+      justify-content: flex-start; /* Ensure content is left-aligned */
     }
   {%- endstyle -%}
 
