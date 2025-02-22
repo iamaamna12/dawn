@@ -28,67 +28,70 @@
   {% endunless %}
 
   {%- style -%}
-            .section-{{ section.id }}-padding {
-              display: flex;
-              align: right;
+                .section-{{ section.id }}-padding {
+                  display: flex;
+                  align: right;
+                }
+
+                .product__title{
+                  color: var(--Colors-Basic-Black, #000);
+                  font-family: Inter;
+                  font-size: 40px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 48px; /* 120% */
+                  letter-spacing: 2px;
+                }
+
+                .product__info-container{
+                  display: flex;
+                  flex-direction: column;
+                  align-self: stretch;
+                  width: 100%;
+                  align-items: flex-start;
+                  gap: 32px;
+                  flex: 1 0 0;
+
+                }
+
+                @media screen and (min-width: 750px) {
+                  .section-{{ section.id }}-padding {
+                    padding-top: {{ section.settings.padding_top }}px;
+                    padding-bottom: {{ section.settings.padding_bottom }}px;
+                  }
+                }
+
+            .product__media-item img {
+              height: 80px; /* Set the height of the images */
+              object-fit: cover; /* Ensure images maintain their aspect ratio without stretching */
+              margin-bottom: 5px;
+              justify-content: flex-start;
+              align-items: stretch;/* Add space between each image */
             }
-
-            .product__title{
-              color: var(--Colors-Basic-Black, #000);
-              font-family: Inter;
-              font-size: 40px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 48px; /* 120% */
-              letter-spacing: 2px;
-            }
-
-            .product__info-container{
-              display: flex;
-              flex-direction: column;
-              align-self: stretch;
-              width: 100%;
-              align-items: flex-start;
-              gap: 32px;
-              flex: 1 0 0;
-
-            }
-
-            @media screen and (min-width: 750px) {
-              .section-{{ section.id }}-padding {
-                padding-top: {{ section.settings.padding_top }}px;
-                padding-bottom: {{ section.settings.padding_bottom }}px;
-              }
-            }
-
-        .product__media-item img {
-          height: 80px; /* Set the height of the images */
-          object-fit: cover; /* Ensure images maintain their aspect ratio without stretching */
-          margin-bottom: 5px;
-          justify-content: flex-start;
-          align-items: stretch;/* Add space between each image */
+            .product-images-container {
+          display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
         }
-        .product-images-container {
-      display: flex;
-      justify-content: space-between; /* Ensure space between the images */
-    }
 
-    .small-images {
-      display: flex;
-      flex-direction: column; /* Stack the images vertically */
-      gap: 10px; /* Adjust the gap between images */
-      max-width: 80px; /* Set a fixed width for the small images */
-    }
+        .small-images {
+          display: flex;
+          flex-direction: column; /* Stack the images vertically */
+          gap: 10px; /* Adjust the gap between images */
+          max-width: 80px; /* Set a fixed width for the small images */
+        }
 
-    .main-image img {
-      width: 100%; /* Ensure the main image takes up full width */
-      height: auto; /* Adjust height proportionally */
-    }
+        .main-image img {
+          width: 564px; /* Ensure the main image takes up full width */
+          height: auto; /* Adjust height proportionally */
+          flex: 1 0 0;
+        }
 
-    .small-images img {
-      height: 80px; /* Set the height for the small images */
-      object-fit: cover; /* Make sure the images keep their aspect ratio */
-    }
+        .small-images img {
+          height: 80px; /* Set the height for the small images */
+          object-fit: cover; /* Make sure the images keep their aspect ratio */
+        }
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
