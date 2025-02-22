@@ -64,31 +64,30 @@
         .product__media-item img {
           height: 80px; /* Set the height of the images */
           object-fit: cover; /* Ensure images maintain their aspect ratio without stretching */
-          width: 80px;
+          margin-bottom: 5px;
+          justify-content: flex-start;
+          align-items: stretch;/* Add space between each image */
         }
-
-        .product-media-container {
+        .product-images-container {
       display: flex;
-      justify-content: space-between; /* Position main image and small images on opposite sides */
-      gap: 20px;
+      justify-content: space-between; /* Ensure space between the images */
     }
 
     .small-images {
       display: flex;
-      flex-direction: column; /* Stack the small images vertically */
-      gap: 10px;
+      flex-direction: column; /* Stack the images vertically */
+      gap: 10px; /* Adjust the gap between images */
       max-width: 80px; /* Set a fixed width for the small images */
     }
 
     .main-image img {
       width: 100%; /* Ensure the main image takes up full width */
-      height: auto; /* Maintain aspect ratio */
+      height: auto; /* Adjust height proportionally */
     }
 
-    .product__media-item img {
-      height: 80px; /* Fixed height for the small images */
-      object-fit: cover; /* Maintain aspect ratio */
-      width: 80px; /* Set fixed width for small images */
+    .small-images img {
+      height: 80px; /* Set the height for the small images */
+      object-fit: cover; /* Make sure the images keep their aspect ratio */
     }
   {%- endstyle -%}
 
@@ -133,25 +132,18 @@
           {%- unless placeholder -%}
             {% render 'product-media-gallery', product: product, variant_images: variant_images, limit: 5 %}
           {%- else -%}
-            <div class="product-media-container">
-              <div class="small-images">
-                {%- for image in product.images limit: 5 %}
-                  <div class="product__media-item">
-                    <img src="{{ image.src | img_url: '100x' }}" alt="{{ image.alt | escape }}">
-                  </div>
-                {%- endfor %}
+            <div class="product__media-item">
+              <div class="product-images-container">
+                <div class="small-images">
+                  <img src="image_3b86d91e-8e4f-462a-9505-ae685295435d.png" alt="Small Image 1">
+                  <img src="image_1.png" alt="Small Image 2">
+                  <img src="image_2.png" alt="Small Image 3">
+                  <img src="image_3.png" alt="Small Image 4">
+                </div>
+                <div class="main-image">
+                  <img src="placeholder-image.png" alt="Main Image">
+                </div>
               </div>
-
-              <div class="main-image">
-                <img
-                  src="{{ product.featured_image | img_url: '800x' | default: 'placeholder-image.png' }}"
-                  alt="{{ product.featured_image.alt | escape }}"
-                >
-              </div>
-            </div>
-
-            {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-            </div>
             </div>
           {%- endunless -%}
         </div>
