@@ -133,23 +133,24 @@
           {%- unless placeholder -%}
             {% render 'product-media-gallery', product: product, variant_images: variant_images, limit: 5 %}
           {%- else -%}
-            <div class="product__media-item">
-              <div class="product-media-container">
-                <div class="small-images">
-                  {%- for image in product.images limit: 5 %}
-                    <div class="product__media-item">
-                      <img src="{{ image.src | img_url: '100x' }}" alt="{{ image.alt | escape }}">
-                    </div>
-                  {%- endfor %}
-                </div>
-                <div class="main-image">
-                  <img
-                    src="{{ product.featured_image | img_url: '800x' }}"
-                    alt="{{ product.featured_image.alt | escape }}"
-                  >
-                </div>
+            <div class="product-media-container">
+              <div class="small-images">
+                {%- for image in product.images limit: 5 %}
+                  <div class="product__media-item">
+                    <img src="{{ image.src | img_url: '100x' }}" alt="{{ image.alt | escape }}">
+                  </div>
+                {%- endfor %}
               </div>
-              {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+
+              <div class="main-image">
+                <img
+                  src="{{ product.featured_image | img_url: '800x' | default: 'placeholder-image.png' }}"
+                  alt="{{ product.featured_image.alt | escape }}"
+                >
+              </div>
+            </div>
+
+            {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             </div>
             </div>
           {%- endunless -%}
