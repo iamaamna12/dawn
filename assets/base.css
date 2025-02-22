@@ -4143,6 +4143,15 @@ flex-shrink: 0;
   }
 }
 
-
+.product-title{
+color: var(--Colors-Basic-Black, #000);
+/* H2 */
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 48px; /* 120% */
+letter-spacing: 2px;
+}
 
 
