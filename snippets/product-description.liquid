@@ -38,6 +38,7 @@
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.8px;
+    margin: 2;
   }
 
   #secondh4 {
@@ -48,6 +49,7 @@
     font-weight: 600;
     line-height: 10px;
     letter-spacing: 0.8px;
+    margin: 2;
   }
 
   p,
@@ -57,6 +59,9 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    display: flex;
+    flex-direction: column; /* Stacks the items vertically */
+    gap: 10px; /* Creates space between the list items */
   }
 
   ul {
@@ -67,10 +72,9 @@
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   li strong {
@@ -91,7 +95,6 @@
     li {
       font-size: 14px;
     }
-
     svg {
       stroke-width: 1px;
       stroke: var(--Colors-Grey-medium, #c8c8c8);
