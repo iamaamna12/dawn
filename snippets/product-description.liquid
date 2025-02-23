@@ -5,13 +5,15 @@
     padding: 60px 20px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0px;
+    gap: 24px;
   }
 
   .section-header {
     display: flex;
-    justify-content: space-between; /* Pushes content to both ends */
-    align-items: center; /* Vertically aligns content */
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 34px;
+    align-self: stretch;
     width: 100%;
   }
 
@@ -34,9 +36,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 5px; /* 150% */
+    line-height: 24px; /* 150% */
     letter-spacing: 0.8px;
-    margin: 5;
   }
 
   #secondh4 {
@@ -45,8 +46,8 @@
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
+    line-height: 10px;
     letter-spacing: 0.8px;
-    line-height: 2;
   }
 
   p,
@@ -60,18 +61,80 @@
 
   ul {
     align-self: stretch;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
+    color: var(--Colors-Basic-Black, #000);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
   }
 
   li strong {
     font-weight: 600;
   }
+
+  @media (max-width: 768px) {
+    .product-details {
+      width: 100%;
+      padding: 30px 10px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      font-size: 14px;
+    }
+
+    p {
+      align-self: stretch;
+      color: var(--Colors-Basic-Black, #000);
+
+      /* Body Regular */
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+
+    svg {
+      stroke-width: 1px;
+      stroke: var(--Colors-Grey-medium, #c8c8c8);
+      height: 0px;
+    }
+
+    #arrow-down {
+      stroke-width: 1.5px;
+      stroke: var(--Colors-Basic-Black, #000);
+      width: 6px;
+      height: 14px;
+      transform: rotate(90deg);
+      margin-left: 10px;
+      align-items: right;
+      justify-content: space-between;
+    }
+
+    #arrow-up {
+      stroke-width: 1.5px;
+      stroke: var(--Colors-Basic-Black, #000);
+      width: 6px;
+      height: 14px;
+      padding: 1.5px;
+      transform: rotate(-90deg);
+      margin-left: 24px;
+      align-items: right;
+      justify-content: space-between;
+    }
+  }
 {% endstyle %}
 
 <div class="product-details">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1402" height="2" viewBox="0 0 1402 2" fill="none">
+    <path d="M1 0.75L1401 0.749878" stroke="#C8C8C8" stroke-linecap="round"/>
+  </svg>
   <div class="section-header">
     <h3>BESCHREIBUNG</h3>
     <svg
@@ -85,28 +148,32 @@
       <path d="M1 7.75L4.49988 4.75L8 1.75L15 7.75" stroke="black" stroke-width="1.5"/>
     </svg>
   </div>
-
-  <h4>Erhöhen Sie die Sicherheit auf der Straße mit dem VZ101 Gefahrstelle Verkehrsschild...</h4>
-  <h4 id="secondh4">
-    Warnen Sie effektiv vor neuen und temporären Gefahren mit dem robusten und auffälligen Verkehrszeichen 101
-  </h4>
-  <p>
-    Das Verkehrszeichen 101 "Gefahrstelle" spielt eine entscheidende Rolle bei der Gewährleistung der Sicherheit auf
-    unseren Straßen. Es warnt Verkehrsteilnehmer vor neuen oder temporären Gefahrensituationen, bei denen erhöhte
-    Aufmerksamkeit erforderlich ist. Die genaue Gefahrenquelle kann durch Zusatzzeichen detaillierter beschrieben
-    werden. Bei dauerhaften Gefahren kommen die Gefahrzeichen 102 bis 151 zum Einsatz.
-  </p>
-  <ul>
-    <li><strong>Verkehrszeichen-Nummer:</strong> 101</li>
-    <li><strong>Bedeutung:</strong> Gefahrstelle</li>
-    <li><strong>Material:</strong> Aluminium</li>
-    <li><strong>Erhältlich mit folgenden Abmessungen:</strong> SL 630 mm, SL 900 mm und SL 1260</li>
-    <li><strong>Folien der Reflexionsklassen:</strong> RA1, RA2 und RA3</li>
-    <li><strong>Erhältlich in den Bauformen:</strong> 2 mm, 3 mm, Alform und Randform</li>
-    <li><strong>Verfügbare Bohrungen:</strong> ohne, IVZ I = 70 mm, IVZ II und für IVZ III = Rahmen</li>
-    <li><strong>Rückseite grau lackiert in RAL 7043</strong></li>
-    <li><strong>Sonderanfertigungen auf Anfrage</strong></li>
-  </ul>
+  
+    <svg xmlns="http://www.w3.org/2000/svg" width="1402" height="2" viewBox="0 0 1402 2" fill="none">
+      <path d="M1 0.75L1401 0.749878" stroke="#C8C8C8" stroke-linecap="round"/>
+    </svg>
+    <h4>Erhöhen Sie die Sicherheit auf der Straße mit dem VZ101 Gefahrstelle Verkehrsschild...</h4>
+    <h4 id="secondh4">
+      Warnen Sie effektiv vor neuen und temporären Gefahren mit dem robusten und auffälligen Verkehrszeichen 101
+    </h4>
+    <p>
+      Das Verkehrszeichen 101 "Gefahrstelle" spielt eine entscheidende Rolle bei der Gewährleistung der Sicherheit auf
+      unseren Straßen. Es warnt Verkehrsteilnehmer vor neuen oder temporären Gefahrensituationen, bei denen erhöhte
+      Aufmerksamkeit erforderlich ist. Die genaue Gefahrenquelle kann durch Zusatzzeichen detaillierter beschrieben
+      werden. Bei dauerhaften Gefahren kommen die Gefahrzeichen 102 bis 151 zum Einsatz.
+    </p>
+    <ul>
+      <li><strong>Verkehrszeichen-Nummer:</strong> 101</li>
+      <li><strong>Bedeutung:</strong> Gefahrstelle</li>
+      <li><strong>Material:</strong> Aluminium</li>
+      <li><strong>Erhältlich mit folgenden Abmessungen:</strong> SL 630 mm, SL 900 mm und SL 1260</li>
+      <li><strong>Folien der Reflexionsklassen:</strong> RA1, RA2 und RA3</li>
+      <li><strong>Erhältlich in den Bauformen:</strong> 2 mm, 3 mm, Alform und Randform</li>
+      <li><strong>Verfügbare Bohrungen:</strong> ohne, IVZ I = 70 mm, IVZ II und für IVZ III = Rahmen</li>
+      <li><strong>Rückseite grau lackiert in RAL 7043</strong></li>
+      <li><strong>Sonderanfertigungen auf Anfrage</strong></li>
+    </ul>
+  </div>
 
   <svg xmlns="http://www.w3.org/2000/svg" width="1402" height="2" viewBox="0 0 1402 2" fill="none">
     <path d="M1 0.75L1401 0.749878" stroke="#C8C8C8" stroke-linecap="round"/>
@@ -114,34 +181,20 @@
 
   <div class="section-header">
     <h3>EIGENSCHAFTEN</h3>
-    <svg
-      id="arrow-down"
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="8"
-      viewBox="0 0 16 9"
-      fill="none"
-    >
-      <path d="M15 0.75L11.5001 3.75L8 6.75L1 0.749999" stroke="black" stroke-width="1.5"/>
-    </svg>
+    <!-- Content for properties would go here -->
   </div>
+
   <svg xmlns="http://www.w3.org/2000/svg" width="1402" height="2" viewBox="0 0 1402 2" fill="none">
     <path d="M1 0.75L1401 0.749878" stroke="#C8C8C8" stroke-linecap="round"/>
   </svg>
 
   <div class="section-header">
     <h3>BEWERTUNGEN</h3>
-    <svg
-      id="arrow-down"
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="8"
-      viewBox="0 0 16 9"
-      fill="none"
-    >
+    <svg id="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
       <path d="M15 0.75L11.5001 3.75L8 6.75L1 0.749999" stroke="black" stroke-width="1.5"/>
     </svg>
   </div>
+
   <svg xmlns="http://www.w3.org/2000/svg" width="1402" height="2" viewBox="0 0 1402 2" fill="none">
     <path d="M1 0.75L1401 0.749878" stroke="#C8C8C8" stroke-linecap="round"/>
   </svg>
