@@ -1,0 +1,84 @@
+{% style %}
+  .product-details {
+    display: flex;
+    width: 1440px;
+    padding: 60px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .section-header {
+    width: 100%;
+  }
+
+  h3 {
+    color: var(--Colors-Basic-Black, #000);
+    font-family: Inter, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 1.3px;
+    flex: 1 0 0;
+  }
+
+  p,
+  li {
+    color: var(--Colors-Basic-Black, #000);
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    align-self: stretch;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li strong {
+    font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    .product-details {
+      width: 100%;
+      padding: 30px 10px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      font-size: 14px;
+    }
+  }
+{% endstyle %}
+<div class="product-details">
+  <div class="section-header">
+    <h3>Beschreibung</h3>
+    <p>Erhöhen Sie die Sicherheit auf der Straße mit dem VZ101 Gefahrstelle Verkehrsschild...</p>
+  </div>
+
+  <div class="section-header">
+    <h3>EIGENSCHAFTEN</h3>
+    <ul>
+      <li><strong>Verkehrszeichen-Nummer:</strong> 101</li>
+      <li><strong>Bedeutung:</strong> Gefahrstelle</li>
+      <li><strong>Material:</strong> Aluminium</li>
+      <li><strong>Erhältlich mit folgenden Abmessungen:</strong> SL 630 mm, SL 900 mm und SL 1260</li>
+      <li><strong>Folien der Reflexionsklassen:</strong> RA1, RA2 und RA3</li>
+      <li><strong>Erhältlich in den Bauformen:</strong> 2 mm, 3 mm, Alform und Randform</li>
+      <li><strong>Verfügbare Bohrungen:</strong> ohne, IVZ I = 70 mm, IVZ II und für IVZ III = Rahmen</li>
+      <li><strong>Rückseite grau lackiert in RAL 7043</strong></li>
+      <li><strong>Sonderanfertigungen auf Anfrage</strong></li>
+    </ul>
+  </div>
+
+  <div class="section-header">
+    <h3>BEWERTUNGEN</h3>
+    <p>Reviews and ratings content here</p>
+  </div>
+</div>
