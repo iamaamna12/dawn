@@ -75,49 +75,27 @@
   li strong {
     font-weight: 600;
   }
+  #arrow-down {
+    stroke-width: 1.5px;
+    stroke: var(--Colors-Basic-Black, #000);
+    width: 6px;
+    height: 14px;
+    transform: rotate(90deg);
+    margin-left: 10px;
+    align-items: right;
+    justify-content: space-between;
+  }
 
-  @media (max-width: 768px) {
-    .product-description-detail {
-      width: 100%;
-      padding: 30px 10px;
-    }
-
-    h3 {
-      font-size: 22px;
-    }
-
-    p,
-    li {
-      font-size: 14px;
-    }
-    svg {
-      stroke-width: 1px;
-      stroke: var(--Colors-Grey-medium, #c8c8c8);
-      height: 2px;
-    }
-
-    #arrow-down {
-      stroke-width: 1.5px;
-      stroke: var(--Colors-Basic-Black, #000);
-      width: 6px;
-      height: 14px;
-      transform: rotate(90deg);
-      margin-left: 10px;
-      align-items: right;
-      justify-content: space-between;
-    }
-
-    #arrow-up {
-      stroke-width: 1.5px;
-      stroke: var(--Colors-Basic-Black, #000);
-      width: 6px;
-      height: 14px;
-      padding: 1.5px;
-      transform: rotate(-90deg);
-      margin-left: 24px;
-      align-items: right;
-      justify-content: space-between;
-    }
+  #arrow-up {
+    stroke-width: 1.5px;
+    stroke: var(--Colors-Basic-Black, #000);
+    width: 6px;
+    height: 14px;
+    padding: 1.5px;
+    transform: rotate(-90deg);
+    margin-left: 24px;
+    align-items: right;
+    justify-content: space-between;
   }
 {% endstyle %}
 
