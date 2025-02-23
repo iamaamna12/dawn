@@ -14,12 +14,40 @@
 
   h3 {
     color: var(--Colors-Basic-Black, #000);
-    font-family: Inter, sans-serif;
+
+    /* H3 */
+    font-family: Inter;
     font-size: 26px;
+    font-style: normal;
     font-weight: 600;
-    line-height: 34px;
+    line-height: 34px; /* 130.769% */
     letter-spacing: 1.3px;
     flex: 1 0 0;
+  }
+
+  h4 {
+    color: var(--Colors-Blue, #004f9f);
+
+    /* H4 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.8px;
+  }
+
+  h4 secondh4 {
+    align-self: stretch;
+    color: var(--Colors-Basic-Black, #000);
+
+    /* H4 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.8px;
   }
 
   p,
@@ -54,27 +82,49 @@
     li {
       font-size: 14px;
     }
+    p {
+      align-self: stretch;
+      color: var(--Colors-Basic-Black, #000);
+
+      /* Body Regular */
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
   }
 {% endstyle %}
-<div class="product-details">
-  <div class="section-header">
-    <h3>Beschreibung</h3>
-    <p>Erhöhen Sie die Sicherheit auf der Straße mit dem VZ101 Gefahrstelle Verkehrsschild...</p>
-  </div>
+{% section class="product-details" %}
+<div class="section-header">
+  <h3>BESCHREIBUNG</h3>
+  <h4>Erhöhen Sie die Sicherheit auf der Straße mit dem VZ101 Gefahrstelle Verkehrsschild...</h4>
+  <h4 id="secondh4">
+    Warnen Sie effektiv vor neuen und temporären Gefahren mit dem robusten und auffälligen Verkehrszeichen 101
+  </h4>
+  <br>
+  <p>
+    Das Verkehrszeichen 101 "Gefahrstelle" spielt eine entscheidende Rolle bei der Gewährleistung der Sicherheit auf
+    unseren Straßen. Es warnt Verkehrsteilnehmer vor neuen oder temporären Gefahrensituationen, bei denen erhöhte
+    Aufmerksamkeit erforderlich ist. Die genaue Gefahrenquelle kann durch Zusatzzeichen detaillierter beschrieben
+    werden. Bei dauerhaften Gefahren kommen die Gefahrzeichen 102 bis 151 zum Einsatz.
+  </p>
+  <br>
+  <ul>
+    <li><strong>Verkehrszeichen-Nummer:</strong> 101</li>
+    <li><strong>Bedeutung:</strong> Gefahrstelle</li>
+    <li><strong>Material:</strong> Aluminium</li>
+    <li><strong>Erhältlich mit folgenden Abmessungen:</strong> SL 630 mm, SL 900 mm und SL 1260</li>
+    <li><strong>Folien der Reflexionsklassen:</strong> RA1, RA2 und RA3</li>
+    <li><strong>Erhältlich in den Bauformen:</strong> 2 mm, 3 mm, Alform und Randform</li>
+    <li><strong>Verfügbare Bohrungen:</strong> ohne, IVZ I = 70 mm, IVZ II und für IVZ III = Rahmen</li>
+    <li><strong>Rückseite grau lackiert in RAL 7043</strong></li>
+    <li><strong>Sonderanfertigungen auf Anfrage</strong></li>
+  </ul>
+  {% section end %}
 
   <div class="section-header">
     <h3>EIGENSCHAFTEN</h3>
-    <ul>
-      <li><strong>Verkehrszeichen-Nummer:</strong> 101</li>
-      <li><strong>Bedeutung:</strong> Gefahrstelle</li>
-      <li><strong>Material:</strong> Aluminium</li>
-      <li><strong>Erhältlich mit folgenden Abmessungen:</strong> SL 630 mm, SL 900 mm und SL 1260</li>
-      <li><strong>Folien der Reflexionsklassen:</strong> RA1, RA2 und RA3</li>
-      <li><strong>Erhältlich in den Bauformen:</strong> 2 mm, 3 mm, Alform und Randform</li>
-      <li><strong>Verfügbare Bohrungen:</strong> ohne, IVZ I = 70 mm, IVZ II und für IVZ III = Rahmen</li>
-      <li><strong>Rückseite grau lackiert in RAL 7043</strong></li>
-      <li><strong>Sonderanfertigungen auf Anfrage</strong></li>
-    </ul>
   </div>
 
   <div class="section-header">
